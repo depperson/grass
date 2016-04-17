@@ -9,7 +9,7 @@ GameOver.prototype = {
     create: function ()
     {
         centerX = window.innerWidth / 2;
-        var titleStyle = { font: 'bold 50pt Courier', fill: '#EFEFEF', align: 'center'};
+        var titleStyle = { font: 'bold 40pt Courier', fill: '#EFEFEF', align: 'center'};
         var gameText = game.add.text(centerX, 200,  "GAME OVER\n\n" +
                                                     this.score + " POINTS\n\n" +
                                                     "PLAY AGAIN?", titleStyle);

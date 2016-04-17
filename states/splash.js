@@ -3,7 +3,7 @@ Splash.prototype = {
 
     init: function ()
     {
-        this.titleStyle = { font: 'bold 50pt Courier', fill: '#EFEFEF', align: 'center'};
+        this.titleStyle = { font: 'bold 70pt Courier', fill: '#EFEFEF', align: 'center'};
         this.centerX = window.innerWidth / 2;
         this.centerY = window.innerHeight / 2;
         this.loadingText = game.add.text(this.centerX, this.centerY, "LOAD'N", this.titleStyle);
