@@ -78,7 +78,10 @@ Game.prototype = {
         // trigger the endgame after 60 seconds
         setTimeout(function () { game.state.start("GameOver", true, false, this.totalScore); }, 60000);
         
-        // TODO: touch??
+        // thanks https://github.com/Gamegur-us/phaser-touch-control-plugin
+        this.touchControl = game.plugins.add(Phaser.Plugin.TouchControl);
+        this.touchControl.inputEnable();
+        
         // get keyboard input
         cursors = game.input.keyboard.createCursorKeys();
     },
@@ -98,13 +101,18 @@ Game.prototype = {
     
     update: function ()
     {
+        // keyboard
         if (cursors.left.isDown)        player.body.rotateLeft(100);
         else if (cursors.right.isDown)  player.body.rotateRight(100);
         else                            player.body.setZeroRotation();
-        
         if (cursors.up.isDown)          player.body.thrust(400);
         else if (cursors.down.isDown)   player.body.reverse(400);
-        else                            player.body.setZeroVelocity();
+        //else                            player.body.setZeroVelocity();
+        
+        // touch
+        var speed = this.touchControl.speed;
+        player.body.thrust(speed.y);
+        player.body.rotateLeft(speed.x);
         
         // cancel out the drifting / sliding feeling
         this.stopSidewaysVelocity(player);

@@ -17,12 +17,17 @@ Splash.prototype = {
         
         game.load.script('game',    'states/game.js');
         game.load.script('gameover','states/gameover.js');
+        game.load.script('joystick','vendor/phaser-touch-control.js');
         
         //game.load.tilemap('world', 'assets/grasstest.json', null, Phaser.Tilemap.TILED_JSON)
         //game.load.image('tiles', 'assets/tiles.png');
         
         game.load.tilemap('world', 'assets/newmap.json', null, Phaser.Tilemap.TILED_JSON)
         game.load.image('tiles', 'assets/newtiles.png');
+        
+        this.load.image('compass', 'assets/compass_rose.png');
+        this.load.image('touch_segment', 'assets/touch_segment.png');
+        this.load.image('touch', 'assets/touch.png');
         
         var mower = ['0000000000',
                      '..0....0..',
