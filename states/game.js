@@ -76,7 +76,7 @@ Game.prototype = {
         game.time.events.loop(Phaser.Timer.SECOND, this.everySecond, this);
         
         // trigger the endgame after 60 seconds
-        setTimeout(function () { game.state.start("GameOver", true, false, this.totalScore); }, 10000);
+        setTimeout(function () { game.state.start("GameOver", true, false, this.totalScore); }, 60000);
         
         // TODO: touch??
         // get keyboard input
