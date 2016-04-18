@@ -1,6 +1,6 @@
 Intro
 -----
-Grass is a lawn mowing game.  Written in Javascript by [Daniel Epperson](d33z.com), powered by [Phaser](https://github.com/photonstorm/phaser). [Play online](grass.d33z.com).
+Grass is a lawn mowing game.  Written in Javascript by [Daniel Epperson](http://d33z.com), powered by [Phaser](https://github.com/photonstorm/phaser). [Play online](http://grass.d33z.com).
 
 
 Credits
