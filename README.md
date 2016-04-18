@@ -1,11 +1,12 @@
 Intro
 -----
-Grass is a slow paced lawn mowing game.  Written in Javascript by Daniel Epperson, powered by Phaser.
+Grass is a lawn mowing game.  Written in Javascript by [Daniel Epperson](d33z.com), powered by [Phaser](https://github.com/photonstorm/phaser). [Play online](grass.d33z.com).
 
 
 Credits
 -------
-* WolfMountainGames for http://opengameart.org/content/32-x-32-grass-tile
+* Tiles http://opengameart.org/content/32-x-32-grass-tile
+* Joystick https://github.com/Gamegur-us/phaser-touch-control-plugin
 
 
 License
